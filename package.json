@@ -1,25 +1,25 @@
 {
-  "name": "gitbook-plugin-i18n",
-  "description": "implement i18n according different url",
+  "name": "gitbook-plugin-nepali-locale-switcher",
+  "description": "implement Nepali locale on demand",
   "main": "index.js",
-  "version": "1.2.1",
+  "version": "1.0.0",
   "dependencies": {
     "lodash": "^3.10.1"
   },
   "engines": {
     "gitbook": ">=2.4.0"
   },
-  "homepage": "https://github.com/AbnerXin/gitbook-plugin-i18n",
+  "homepage": "https://github.com/avasz/gitbook-plugin-nepali-locale-switcher",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AbnerXin/gitbook-plugin-i18n.git"
+    "url": "https://github.com/avasz/gitbook-plugin-nepali-locale-switcher"
   },
   "license": "Apache-2.0",
   "gitbook": {
     "properties": {
       "all": {
         "default": [
-          "chinese",
+          "nepali",
           "english"
         ],
         "items": {
@@ -31,12 +31,12 @@
       "EnglishUrl": {
         "title": "english",
         "type": "string",
-        "default": "../en-US"
+        "default": "../en_US"
       },
-      "ChineseUrl": {
-        "title": "chinese",
+      "NepaliUrl": {
+        "title": "nepali",
         "type": "string",
-        "default": "../zh-CN"
+        "default": "../ne_NP"
       }
     }
   },

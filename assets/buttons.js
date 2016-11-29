@@ -7,15 +7,17 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 'icon': 'fa fa-globe',
                 'onClick': function(e) {
                     e.preventDefault();
-                    window.open(config.i18n.EnglishUrl, '_self');
+                    //window.open(config.i18n.EnglishUrl, '_self');
+					window.location.href = window.location.href.replace('ne_NP', 'en_US');
                 }
             },
-            'chinese': {
-                'label': '中文',
-                'icon': 'fa fa-language',
+            'nepali': {
+                'label': 'नेपाली',
+                'icon': 'fa fa-globe',
                 'onClick': function(e) {
                     e.preventDefault();
-                    window.open(config.i18n.ChineseUrl, '_self');
+                    //window.open(config.i18n.NepaliUrl, '_self');
+					window.location.href = window.location.href.replace('en_US', 'ne_NP');
                 }
             }
         };
@@ -33,7 +35,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
         if (menu.length > 0) {
             gitbook.toolbar.createButton({
-                icon: 'fa fa-language',
+                icon: 'fa fa-globe',
                 label: 'Share',
                 position: 'left',
                 dropdown: [menu]
